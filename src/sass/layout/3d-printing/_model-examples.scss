@@ -1,0 +1,189 @@
+.model-examples {
+  padding-top: 20px;
+  @include min-width($tablet) {
+    padding-top: 30px;
+  }
+  @include min-width($desktop) {
+    padding-top: 45px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+
+    @include min-width($desktop) {
+      margin-bottom: 24px;
+      margin-left: 117px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: 20px;
+    @include min-width($tablet) {
+      gap: 32px;
+    }
+  }
+  &__item {
+    width: calc((100% - 16px) / 2);
+    height: 182px;
+    background: #ffffff;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+      inset -1px -1px 16px #ffffff;
+    border-radius: 50px 0px;
+    @include min-width($tablet) {
+      width: 152px;
+      height: 182px;
+    }
+    @include min-width($desktop) {
+      width: 320px;
+      height: 382px;
+    }
+  }
+
+  &__img-1 {
+    width: 90px;
+    height: 75px;
+    margin: auto;
+    padding: 25px 23px 18px 17px;
+    box-sizing: content-box;
+    @include min-width($tablet) {
+      width: 106px;
+      height: 87px;
+      margin: 0;
+      padding: 30px 27px 20px 19px;
+    }
+    @include min-width($desktop) {
+      width: 242px;
+      height: 197px;
+      padding: 20px 0 22px;
+    }
+  }
+  &__img-2 {
+    width: 101px;
+    height: 64px;
+    margin: auto;
+    padding: 38px 12px 17px 17px;
+    box-sizing: content-box;
+    @include min-width($tablet) {
+      width: 118px;
+      height: 73px;
+      margin: 0;
+      padding: 44px 14px 19px 20px;
+    }
+    @include min-width($desktop) {
+      width: 240px;
+      height: 149px;
+      padding: 46px 0 45px;
+    }
+  }
+  &__img-3 {
+    width: 43px;
+    height: 71px;
+    margin: auto;
+    padding: 31px 43px 16px 44px;
+    box-sizing: content-box;
+    @include min-width($tablet) {
+      width: 50px;
+      height: 81px;
+      margin: 0;
+      padding: 36px 50px 19px 51px;
+    }
+    @include min-width($desktop) {
+      width: 149px;
+      height: 240px;
+      padding: 0 46px 0 45px;
+    }
+  }
+  &__img-4 {
+    width: 84px;
+    height: 85px;
+    margin: auto;
+    padding: 24px 23px 9px 23px;
+    box-sizing: content-box;
+    @include min-width($tablet) {
+      width: 98px;
+      height: 98px;
+      margin: 0;
+      padding: 27px 27px 11px 27px;
+    }
+    @include min-width($desktop) {
+      width: 240px;
+      height: 240px;
+      padding: 0;
+    }
+  }
+  &__text {
+    color: $accent-color;
+    @include font(400, 14, 18);
+    text-align: center;
+
+    @include max-width($desktop) {
+      padding-top: 20px;
+    }
+
+    @include min-width($desktop) {
+      @include font(400, 18, 23);
+    }
+  }
+  &__thumb-1 {
+    @include min-width($desktop) {
+      width: 240px;
+      height: 240px;
+
+      box-sizing: content-box;
+    }
+  }
+  &__thumb-2 {
+    @include min-width($desktop) {
+      width: 240px;
+      height: 240px;
+
+      box-sizing: content-box;
+    }
+  }
+  &__thumb-3 {
+    @include min-width($desktop) {
+      width: 240px;
+      height: 240px;
+
+      box-sizing: content-box;
+    }
+  }
+  &__thumb-4 {
+    @include min-width($desktop) {
+      width: 240px;
+      height: 240px;
+
+      box-sizing: content-box;
+    }
+  }
+}
+
+.model-examples__text {
+  @include min-width-max-width($tablet, $desktop) {
+    padding-top: 0;
+  }
+}
+
+.model-examples__thumb {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  @include min-width($desktop) {
+    gap: 20px;
+  }
+}
+
+.model-examples__block-text {
+  @include max-width($desktop) {
+    display: block;
+  }
+  @include min-width($desktop) {
+    margin-left: 0.5rem;
+  }
+}

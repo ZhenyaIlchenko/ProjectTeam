@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Freedom</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <include src="./partials/take-order/take-order-header.html"></include
+    ><include src="./partials/background-mobile.html"></include>
+    <include src="./partials/take-order/background-take-order.html"></include>
+
+    <main>
+      <include src="./partials/take-order/hero.html"></include>
+      <div class="take-order__flex">
+        <include src="./partials/take-order/order-form.html"></include>
+        <include src="./partials/take-order/order-contacts.html"></include>
+      </div>
+    </main>
+    <include src="./partials/footer.html"></include>
+
+    <script type="module" src="./js/order-form.js"></script>
+    <script defer src="js/menu.js"></script>
+
+    <script src="./js/header-lang.js"></script>
+  </body>
+</html>

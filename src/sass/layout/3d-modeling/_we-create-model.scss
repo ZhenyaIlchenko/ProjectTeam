@@ -1,0 +1,87 @@
+// .we-create-model {
+//   background: $background-color;
+
+//   //   position: relative;
+
+//   //   padding-left: 20px;
+//   //   padding-right: 20px;
+
+//   //   //   @media screen and (min-width: 768px)
+//   //   @include min-width($tablet) {
+//   //     padding-left: 32px;
+//   //     padding-right: 32px;
+//   //   }
+// }
+
+.we-create-model__title {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  max-width: 250px;
+
+  @include max-width($tablet) {
+    margin-bottom: 16px;
+  }
+
+  @include min-width($tablet) {
+    font-size: 24px;
+    max-width: 648px;
+    margin-bottom: 24px;
+  }
+
+  @include min-width($desktop) {
+    font-size: 36px;
+    max-width: 842px;
+    margin-left: 117px;
+    margin-bottom: 40px;
+  }
+}
+
+.we-create-model__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @include min-width($tablet) {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+}
+
+.we-create-model__item {
+  flex-basis: (calc((100% - 20px) / 2));
+
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+
+  @include min-width($tablet) {
+    flex-basis: (calc((100% - 96px) / 4));
+  }
+}
+
+.we-create-model__img1 {
+  border-radius: 0 0 0 41%;
+}
+.we-create-model__img2 {
+  border-radius: 40% 0;
+
+  @include min-width($desktop) {
+    border-radius: 40% 0 40%;
+  }
+}
+
+// .we-create-model__figure3 {
+//   @media screen and (min-width: 1440px) {
+//     background: #ffffff;
+//     width: 136.83px;
+//     height: 144px;
+//     top: 0;
+//     left: -21.82px;
+//     position: absolute;
+
+//     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+//     border-radius: 72px;
+//   }
+// }

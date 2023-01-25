@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Freedom</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <include src="./partials/contacts/contacts-header.html"></include>
+    <include src="./partials/background-mobile.html"></include>
+    <include src="./partials/contacts/background-contacts.html"></include>
+
+    <main>
+      <include src="./partials/contacts/hero.html"></include>
+      <div class="contacts-flex">
+        <include src="./partials/contacts/contacts-form.html"></include>
+        <include src="./partials/contacts/contacts.html"></include>
+      </div>
+    </main>
+    <include src="./partials/footer.html"></include>
+
+    <script type="module" src="./js/order-form.js"></script>
+    <script defer src="js/menu.js"></script>
+
+    <script src="./js/header-lang.js"></script>
+  </body>
+</html>
